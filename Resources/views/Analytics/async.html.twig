@@ -39,9 +39,9 @@ var _ga_create_params = [],
             _ga_init_queue.push(['require', 'linker']);
 
             {% if google_analytics.getAllowAnchor(key) %}
-                _ga_init_queue.push(['linker:autoLink', ['{{ tracker.domain }}'], true)]);
+                _ga_init_queue.push(['linker:autoLink', ['{{ tracker.domain }}'], true]);
             {% else %}
-                _ga_init_queue.push(['linker:autoLink', ['{{ tracker.domain }}'])]);
+                _ga_init_queue.push(['linker:autoLink', ['{{ tracker.domain }}']]);
             {% endif %}
 
         {% endif %}
